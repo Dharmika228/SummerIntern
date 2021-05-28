@@ -1,24 +1,24 @@
 import pandas
-ds = pandas.read_csv('SalaryData') //used to load the csv file
+ds = pandas.read_csv('SalaryData.csv') #used to load the csv file
 
 print("Dataset collected")
 
-ds.info() // gives the details of dataset
+ds.info() # gives the details of dataset
 print("the details\n")
 
 x = ds['YearsExperience']
 y = ds['Salary']
 
-x = ds['YearsExperience'].values.reshape(30,1) //.values converts in pandas to numpy array
+x = ds['YearsExperience'].values.reshape(30,1) #.values converts in pandas to numpy array
 
 from sklearn.linear_model import LinearRegression
-//takes the dataset and trains the model using Linear_function()
+#takes the dataset and trains the model using Linear_function()
 
 model = LinearRegression()
 
 print("Model has been trained\n")
 
-model.fit(x,y)  //uses Linear_Function=> y = c + wx
+model.fit(x,y)  #uses Linear_Function=> y = c + wx
 
 print("The predicted value of salary with x=2.5 is",model.predict([[2.5]]))
 
@@ -31,7 +31,7 @@ joblib.dump(model,'SalaryData.pk1')
 
 print("model has been saved successfully")
 
-// saving the model
+# saving the model
 
 print(""" 
 	to save the model:
@@ -43,5 +43,5 @@ if "Y" in c:
     import joblib
     m1 = joblib.load('SalaryData.pk1')
     print("successfully built")
-if "N" in c:
-    break  
+else:
+    print("bye")
