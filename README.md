@@ -13,5 +13,5 @@
    
    🎇Developed a trained model and also the script to illustrate ML model.
 
-  model_trained.py - trained  and creation of model.
+ -> model_trained.py - trained  and creation of model.
  
