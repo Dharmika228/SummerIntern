@@ -15,3 +15,5 @@
 
  -> model_trained.py - trained  and creation of model.
  
+   video link : https://youtu.be/Wz5K96zl8f4
+ 
